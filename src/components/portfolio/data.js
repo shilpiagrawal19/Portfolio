@@ -3,7 +3,7 @@ export const featuredPorfolio=[
 
     id:"1",
     title: "Juno App",
-    img :"Images/live.png"
+    img :"./Assets/live.png"
 
     },
 
@@ -12,6 +12,7 @@ export const featuredPorfolio=[
     title: "Demo Website",
     img :"Images/task1.png"
     }, 
+    
     
     {
      id:"3",

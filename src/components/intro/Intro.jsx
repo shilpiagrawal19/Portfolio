@@ -1,6 +1,8 @@
 import {ExpandMore} from "@material-ui/icons";
 import { init } from "ityped";
-import { useEffect, useRef } from "react"
+import { useEffect, useRef } from "react";
+import mypic from "../../Assets/mee2.jpeg"
+
 
 
 
@@ -19,7 +21,7 @@ export default function Intro() {
         <div className="intro" id="intro">
         <div className="left">
             <div className="imgContainer">
-                <img className="meimg" src="Images/mee2.jpeg" alt="My img"/>
+                <img className="meimg" src={mypic} alt="My img"/>
             </div>
         </div>
         <div className="right">

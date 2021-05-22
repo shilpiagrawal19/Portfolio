@@ -1,10 +1,16 @@
 import React from 'react'
 import Portfoliolist from '../portfoliolist/Portfoliolist';
-import { useState } from "react"
+import { useState, useEffect } from "react";
+import { featuredPorfolio,
+         livePortfolio,
+        internshipPortfolio,
+         mydesignPortfolio} from "./data.js"
 
 
 export default function Portfolio() {
-    const [selected,setSelected]=useState("featured")
+    const [selected,setSelected]=useState("featured");
+    const [data,setData]=useState([]);
+
     const list=[
         {
 
@@ -26,54 +32,49 @@ export default function Portfolio() {
           title: "My Designs"
          },
 ]
+
+        useEffect(() => {
+
+            switch(selected){
+                case "featured":
+                setData(featuredPorfolio);
+                break;
+                case "live":
+                setData(livePortfolio);
+                break;
+                case "task":
+                setData(internshipPortfolio);
+                break;
+                case "design":
+                setData(mydesignPortfolio);
+                break;
+
+                default:
+                    setData(featuredPorfolio); 
+            }
+
+        },[selected])
     return (
         <div className="portfolio" id="portfolio">
         <h1>Portfolio</h1>
         <ul>   
-        {list.map(item=>(
+        {list.map((item)=>(
             <Portfoliolist 
-            title={item.title} 
+            title={item.title}
             active={selected=== item.id}
-            setSelected={setSelected}/>
+            setSelected={setSelected}
+            id={item.id}/>
         ))}  
         </ul>
 
         <div className="container">
-            <div className="item">
-                <img className="imgproject" src="Images/live.png" alt=""/>
-                <h3>Juno App</h3>
+            {data.map((d) => (
+                <div className="item">
+                <img className="imgproject" src={d.img} alt=""/>
+                <h3>{d.title}</h3>
             </div>
-
-            <div className="item">
-                <img className="imgproject" src="Images/task1.png" alt=""/>
-                <h3>Learning App</h3>
-            </div>
-
-            <div className="item">
-                <img className="imgproject" src="Images/task2.png" alt=""/>
-                <h3>Demo App</h3>
-            </div>
-
-            <div className="item">
-                <img className="imgproject" src="Images/mydesign.png" alt=""/>
-                <h3>Company Website </h3>
-            </div>
-
-            <div className="item">
-                <img className="imgproject" src="Images/mydesign1.png" alt=""/>
-                <h3>Company Website</h3>
-            </div>
-
-            <div className="item">
-                <img className="imgproject" src="Images/mydesign2.png" alt=""/>
-                <h3>Customize website</h3>
-            </div>
-
-            <div className="item">
-                <img className="imgproject" src="Images/mydesign3.png" alt=""/>
-                <h3>Signup form</h3>
-            </div>
-
+            ))}
+           
         </div>
             
         </div>

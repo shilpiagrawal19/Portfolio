@@ -1,5 +1,6 @@
 import React from 'react'
 import Portfoliolist from '../portfoliolist/Portfoliolist';
+
 import { useState, useEffect } from "react";
 import { featuredPorfolio,
          livePortfolio,
@@ -48,9 +49,8 @@ export default function Portfolio() {
                 case "design":
                 setData(mydesignPortfolio);
                 break;
-
                 default:
-                    setData(featuredPorfolio); 
+                setData(featuredPorfolio); 
             }
 
         },[selected])
@@ -70,8 +70,9 @@ export default function Portfolio() {
         <div className="container">
             {data.map((d) => (
                 <div className="item">
-                <img className="imgproject" src={d.img} alt="loading"/>
                 <a href={d.href} className="titlelink">{d.title}</a>
+                <img className="imgproject" src={d.img} alt="loading"/>
+
 
                 <div>
                 </div>

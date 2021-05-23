@@ -4,7 +4,6 @@ import Portfolio from "./components/portfolio/Portfolio";
 import Works from "./components/works/Works";
 import Testimonial from "./components/testimonial/Testimonial";
 import Contact from "./components/contact/Contact";
-
 import "./components/intro/Intro.scss";
 import './components/topbar/Topbar.scss'
 import "./components/portfolio/Portfolio.scss";
@@ -25,8 +24,8 @@ function App() {
     <Menu Open={menuOpen} setOpen={setMenuOpen}/>
     <div className="sections">
      <Intro/>
-     <Portfolio/>
      <Works/>
+     <Portfolio/>
      <Testimonial/>
      <Contact/>
 

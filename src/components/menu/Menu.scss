@@ -13,6 +13,13 @@
     justify-content: center;
     transition: all 1S ease;
 
+    @include mobile{
+      margin-right: 150px;
+      right: -450px;
+
+
+    }
+
     &.active{
         right: 0;
     }
@@ -35,7 +42,7 @@
             }
 
             &:hover{
-                font-weight: 700;
+                font-weight: 500;
             }
         }
     }

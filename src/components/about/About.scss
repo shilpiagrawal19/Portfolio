@@ -1,19 +1,31 @@
+@import "../../global.scss";
 .about{
     display: flex;
     padding-left: 50px;
 
+    @include mobile{
+        flex-direction: column;
+        align-items: center;
+        padding-left: 20px;
+    }
 }
 
 // .details{
 //     flex: 0.5;
 // }
 .aboutsection{
+    display: flex;
+    
+    @include mobile{
+        flex-direction: column;
+        align-items: center;
+    }
 .ImageSection{
     // display: flex;
-    // flex:0.5;
+    flex:0.5;
     
-    float: left;
-    width: 50%;
+    // float: left;
+    // width: 50%;
     margin-top: 1rem;
     margin-bottom: 1rem;
     .img{
@@ -91,10 +103,10 @@
 ///////////////////////////////////////////////////////////////////
 
 .education{
-    // flex: 0.5;
+    flex: 0.5;
     // float: right;
-    width: 50%;
-    float: right;
+    // width: 50%;
+    // float: right;
 
     h3{
         padding-top: 0px;

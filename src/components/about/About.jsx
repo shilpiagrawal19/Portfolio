@@ -1,5 +1,9 @@
 import React from 'react'
 import Education from './Education';
+import { jsPDF } from "jspdf";
+import resume from "../../Assets/shilpee Agrawal.jpg";
+
+
 
 
 function About() {
@@ -16,6 +20,16 @@ function About() {
     }
 
 function ImageSection() {
+
+    const pdfGenrate=()=>{
+        var doc = new jsPDF ('landscape' ,'px' ,'a4','false');
+        doc.addImage(resume,'PDF',65,0,500,450);
+        doc.addPage();
+        doc.save('shilpee Agrawal.pdf')
+
+
+
+    }
     return (
         <div className="ImageSection">
             <div className="about-info">
@@ -45,7 +59,7 @@ function ImageSection() {
                        
                     </div>
                 </div>
-                <button className="btn">Download Cv</button>
+                <button className="btn" onClick={pdfGenrate}>Download Cv</button>
             </div>
 
             <div className="skill">

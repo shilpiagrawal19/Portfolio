@@ -3,6 +3,7 @@ import emailjs from 'emailjs-com';
 import hand from '../../Assets/hand.png'
 
 export default function Contact() {
+  
   const [message, setMessage] = useState(false);
  function sendEmail (e) {
     e.preventDefault();

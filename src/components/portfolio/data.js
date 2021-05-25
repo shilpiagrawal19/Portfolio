@@ -20,7 +20,8 @@ export const featuredPorfolio=[
     {
     id:"2",
     title: "Demo Website",
-    img : task1
+    img : task1,
+    href :"https://shilpiagrawal19.github.io/Learningdemoapp.github.io/index.html"
     }, 
     
     

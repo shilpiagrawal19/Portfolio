@@ -36,7 +36,7 @@ export default function Skills() {
             <Slide left>
                 <SkillsSection skill={'Html'} progress={'80%'} width={'80%'} />
                 <SkillsSection skill={'Bootstrap'} progress={'70%'} width={'70%'} />
-                <SkillsSection skill={'Css and Scss'} progress={'80%'} width={'80%'} />
+                <SkillsSection skill={'Css & scss'} progress={'80%'} width={'80%'} />
                 <SkillsSection skill={'Javascript'} progress={'60%'} width={'60%'} />
              </Slide>
             </div>

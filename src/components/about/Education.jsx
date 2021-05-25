@@ -19,7 +19,7 @@ export default function Education() {
           </div>
           
             <div>
-            <h3>Education</h3>
+            <h3 className="edu">Education</h3>
             <ul>
                <li>
                 <h4>Bachelor Of Engieering (2016-2020)</h4>

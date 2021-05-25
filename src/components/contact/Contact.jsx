@@ -32,9 +32,6 @@ export default function Contact() {
   return (
 
     <div className="contact" id="contact">
-
-      
-
       <div className="right">
       <Bounce top>
       <h2>CONTACT</h2></Bounce>

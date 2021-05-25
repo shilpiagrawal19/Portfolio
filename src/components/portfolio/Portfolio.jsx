@@ -1,5 +1,8 @@
 import React from 'react'
 import Portfoliolist from '../portfoliolist/Portfoliolist';
+import LightSpeed from 'react-reveal/LightSpeed';
+import Roll from 'react-reveal/Roll';
+import Flip from 'react-reveal/Flip';
 
 import { useState, useEffect } from "react";
 import { featuredPorfolio,
@@ -56,7 +59,9 @@ export default function Portfolio() {
         },[selected])
     return (
         <div className="portfolio" id="portfolio">
-        <h1>Portfolio</h1>
+        <LightSpeed right>
+        <h1>Portfolio</h1></LightSpeed>
+        <Roll left>
         <ul>   
         {list.map((item)=>(
             <Portfoliolist 
@@ -66,23 +71,23 @@ export default function Portfolio() {
             id={item.id}/>
         ))}  
         </ul>
+        </Roll>
+        <Flip left>
 
         <div className="container">
             {data.map((d) => (
                 <div className="item">
                 <img className="imgproject" src={d.img} alt="loading"/>
                 <a href={d.href} className="titlelink">{d.title}</a>
-
-
-
-                <div>
-                </div>
+               <div>
+          </div>
             </div>
-                   
+
             ))}
            
         </div>
-            
+        </Flip>
+
         </div>
     )
 }

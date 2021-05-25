@@ -3,6 +3,7 @@ import Education from './Education';
 import { jsPDF } from "jspdf";
 import resume from "../../Assets/shilpee Agrawal.jpg";
 import Title from '../Title';
+import Slide from 'react-reveal/Slide';
 
 
 
@@ -77,10 +78,12 @@ function ImageSection() {
 
         <div className="AboutPage">
             <Title title={'About Me'} />
+            <Slide top>
             <div className="aboutsection">
             <ImageSection className="details"/>
             <Education/>
             </div>
+            </Slide>
             
 
         </div>

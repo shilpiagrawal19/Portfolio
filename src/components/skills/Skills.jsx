@@ -1,6 +1,8 @@
 import React from 'react'
 import Fade from 'react-reveal/Fade';
 import Title from '../Title';
+import Slide from 'react-reveal/Slide';
+
 
 
 
@@ -31,18 +33,22 @@ export default function Skills() {
             <Fade top>
             <div className="leftskills">
             <div className="skillsContainer">
+            <Slide left>
                 <SkillsSection skill={'Html'} progress={'80%'} width={'80%'} />
                 <SkillsSection skill={'Bootstrap'} progress={'70%'} width={'70%'} />
                 <SkillsSection skill={'Css and Scss'} progress={'80%'} width={'80%'} />
                 <SkillsSection skill={'Javascript'} progress={'60%'} width={'60%'} />
+             </Slide>
             </div>
             </div>
             <div className="rightskills">
             <div className="skillsContainer">
+             <Slide right>
                 <SkillsSection skill={'React Js'} progress={'60%'} width={'60%'} />
                 <SkillsSection skill={'Php'} progress={'40%'} width={'40%'} />
                 <SkillsSection skill={'Git'} progress={'75%'} width={'75%'} />
                 <SkillsSection skill={'Material UI'} progress={'40%'} width={'40%'} />
+                </Slide>
             </div>
         </div>
         </Fade>

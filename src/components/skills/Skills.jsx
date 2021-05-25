@@ -1,16 +1,10 @@
 import React from 'react'
+import Fade from 'react-reveal/Fade';
+import Title from '../Title';
+
+
 
 export default function Skills() {
-    function Tittle({title, span}) {
-        return (
-            <div className="Title">
-                <h3>
-                    {title}
-                    <span> {span}</span>
-                </h3>
-            </div>
-        )
-    }
     function SkillsSection({skill,progress,width}) {
         return (
             <div className="SkillsSection">
@@ -32,8 +26,9 @@ export default function Skills() {
         <div className="skill" id="skill">
             <div className="techskills">
             <div>
-            <Tittle title={'SKILLS'} />
-            
+            <Title title={'SKILLS'}/>
+           
+            <Fade top>
             <div className="leftskills">
             <div className="skillsContainer">
                 <SkillsSection skill={'Html'} progress={'80%'} width={'80%'} />
@@ -50,10 +45,14 @@ export default function Skills() {
                 <SkillsSection skill={'Material UI'} progress={'40%'} width={'40%'} />
             </div>
         </div>
+        </Fade>
             </div>
             </div>
             <div className="personalskills">
+                <Fade top className="fade">
                 <h2>PERSONAL SKILLS</h2>
+                </Fade>
+                <Fade right>
                 <ul>
                 <li>Communication Skills</li>
                 <li>Creative Thinking</li>
@@ -61,9 +60,8 @@ export default function Skills() {
                 <li>Leadership Skills</li>
                 <li>Team Work</li>
                 <li>Time Management</li>
-
-
                 </ul>
+                </Fade>
             </div>
         </div>
     )

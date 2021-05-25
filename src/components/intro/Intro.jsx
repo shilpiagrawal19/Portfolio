@@ -2,6 +2,9 @@ import {ExpandMore} from "@material-ui/icons";
 import { init } from "ityped";
 import { useEffect, useRef } from "react";
 import mypic from "../../Assets/mee2.jpeg"
+import Rotate from 'react-reveal/Rotate';
+import Fade from 'react-reveal/Fade';
+
 
 
 
@@ -20,15 +23,18 @@ export default function Intro() {
     return (
         <div className="intro" id="intro">
         <div className="left">
+        <Rotate top left>
             <div className="imgContainer">
                 <img className="meimg" src={mypic} alt="My img"/>
             </div>
+            </Rotate>
         </div>
         <div className="right">
             <div className="wrapper">
-                 <h2> Hi There ,I'm</h2>
-                 <h1>Shilpee Agrawal</h1>
-                <h3>Software<span ref={textRef}></span></h3>
+            <Fade top>
+            <h2> Hi There ,I'm</h2></Fade>
+             <Fade right>    <h1>Shilpee Agrawal</h1></Fade>
+               <Fade bottom> <h3>Software<span ref={textRef}></span></h3></Fade>
         </div>
         <a href="#portfolio">
         <ExpandMore className="iconDown "/>

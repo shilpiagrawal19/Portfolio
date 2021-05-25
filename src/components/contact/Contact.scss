@@ -9,8 +9,38 @@
   }
 
   .left {
-    flex: 1;
+    flex: 0.8;
     overflow: hidden;
+    padding: 140px 80px 80px 80px;
+    align-items: center;
+
+    .itemContainer{
+      display: flex;
+      align-items: center;
+      margin-left: 30px;
+      padding: 20px 0;
+      @include mobile{
+          display: none;
+          }
+
+      .icon{
+          font-style: 18px;
+          margin-right: 15px;
+          color:rgba(29, 144, 182, 0.753);
+      }
+
+      span{
+          font-size: 18px;
+          font-weight: 400;
+          color: black;
+
+          a{
+            font-size: 18px;
+            color: black;
+            text-decoration: none;
+          }
+      }
+    }
 
     img {
       height: 70%;
@@ -19,7 +49,7 @@
     }
   }
   .right {
-    flex: 1;
+    flex: 1.2;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -27,6 +57,7 @@
 
     h2 {
       font-size: 30px;
+      letter-spacing: 0.6pc;
     }
 
     form {
@@ -41,6 +72,15 @@
         width: 300px;
         height: 30px;
         font-size: 14px;
+        border-radius: 20px;
+
+        border: 1px solid rgba(128, 128, 128, 0.671);
+        padding: 10px;
+        box-shadow: 5px 10px 8px #888888;
+
+        padding: 10px;
+        box-shadow: 5px 10px 20px rgba(193, 228, 233, 0.808) inset;
+      
 
         @include mobile {
           width: 200px;
@@ -53,6 +93,15 @@
         height: 200px;
         font-size: 14px;
 
+        border-radius: 20px;
+        border: 1px solid rgba(128, 128, 128, 0.671);
+        padding: 10px;
+        box-shadow: 5px 10px 8px #888888;
+
+        padding: 10px;
+        box-shadow: 5px 10px 20px  rgba(193, 228, 233, 0.808) inset;
+      
+
         @include mobile {
           width: 200px;
           height: 100px;
@@ -61,14 +110,20 @@
 
       button {
         width: 150px;
-        height: 30px;
-        color: white;
-        background-color: crimson;
+        height: 40px;
+        color: rgb(15, 15, 15);
+        background-color: #2dc0c7b0;
         border: none;
         border-radius: 10px;
         font-weight: 500;
         cursor: pointer;
 
+        border: 1px solid rgba(128, 128, 128, 0.562);
+        padding: 10px;
+        box-shadow: 5px 5px 8px rgb(231, 231, 240), 10px 10px 8px rgba(158, 155, 155, 0.39), 15px 15px 8px rgba(133, 233, 233, 0.452);
+       
+        
+      
         &:focus {
           outline: none;
         }

@@ -1,6 +1,7 @@
 @import "../../global.scss";
+
 .skill{
-    // background-color: darkkhaki;
+    background-color: white;
     display: flex;
     margin-top: 1rem;
     margin-bottom: 1rem;
@@ -88,9 +89,11 @@
     }
 
     .personalskills{
+        flex-direction: column;
         padding: 50px;
         flex:0.4;
         background-color: white;
+       
         h2{
             padding-left: 50px;
             font-size: 24px;

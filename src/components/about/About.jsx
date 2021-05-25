@@ -2,6 +2,9 @@ import React from 'react'
 import Education from './Education';
 import { jsPDF } from "jspdf";
 import resume from "../../Assets/shilpee Agrawal.jpg";
+import Title from '../Title';
+
+
 
 
 
@@ -73,7 +76,7 @@ function ImageSection() {
         <div className="about" id="about">
 
         <div className="AboutPage">
-            <Tittle title={'About Me'} />
+            <Title title={'About Me'} />
             <div className="aboutsection">
             <ImageSection className="details"/>
             <Education/>

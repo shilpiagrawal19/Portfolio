@@ -16,6 +16,7 @@ import "./components/menu/Menu.scss"
 import About from "./components/about/About";
 
 
+
 function App() {
   const [menuOpen,setMenuOpen]= useState(false)
   return (

@@ -50,6 +50,10 @@
             width: 80%;
             text-align: justify;
             font-size: 16px;
+
+            p{
+                padding-bottom: 10px !important;
+            }
         }
     }
     @media screen and (max-width: 1400px){
@@ -117,14 +121,19 @@
     }
     ul{
         list-style-type: square;
+
+        @include mobile{
+            padding-left: 15px;
+           }
         li{
            
             h4{
-               
+               padding-top: 20px !important;
+               padding-bottom: 5px !important;
                 font-weight: 700;
-                margin-bottom: 5px !important;
             }
             p{
+                font-size: 14px;
                 margin-top: 0px !important;
 
             }

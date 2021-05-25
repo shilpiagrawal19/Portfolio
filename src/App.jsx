@@ -1,13 +1,13 @@
 import Intro from "./components/intro/Intro";
 import Topbar from "./components/topbar/Topbar";
 import Portfolio from "./components/portfolio/Portfolio";
-import Testimonial from "./components/testimonial/Testimonial";
+import Skills from "./components/skills/Skills";
 import Contact from "./components/contact/Contact";
 import "./components/intro/Intro.scss";
 import './components/topbar/Topbar.scss'
 import "./components/portfolio/Portfolio.scss";
 import "./components/about/About.scss";
-import  "./components/testimonial/Testimonial.scss";
+import  "./components/skills/Skills.scss";
 import  "./components/contact/Contact.scss";
 import "./App.scss";
 import { useState } from "react";
@@ -25,8 +25,8 @@ function App() {
     <div className="sections">
      <Intro/>
      <About/>
+     <Skills/>
      <Portfolio/>
-     <Testimonial/>
      <Contact/>
 
     </div>

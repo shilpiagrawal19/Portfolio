@@ -1,0 +1,111 @@
+@import "../../global.scss";
+.skill{
+    // background-color: darkkhaki;
+    display: flex;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+
+    @include mobile{
+        flex-direction: column;
+        align-items: center;
+        margin-top: 1rem;
+       margin-bottom: 1rem;
+    }
+
+    .techskills{
+        padding-left: 50px;
+        display: flex;
+        flex: 0.6;
+
+        @include mobile{
+            flex-direction: column;
+            align-items: center;
+        }
+        .leftskills{
+            // padding-top: 80px;
+            // flex: 0.8;
+            width: 300px;
+            float: left;
+            margin-right: 50px;
+
+            @include mobile{
+               margin-right: 0px;
+            }
+        }
+        .rightskills{
+            // padding-top: 80px;
+            // flex: 0.8;
+            width: 300px;
+            float: right;
+        }
+        .SkillsSection{
+   
+        }
+        
+        .skills-container{
+            // display: flex;
+            // .leftskills{
+            //     // flex: 0.5;
+            //     float: left;
+            // }
+            // .rightskills{
+            //     // flex: 0.5;
+            //     float: right;
+            // }
+            .skill-title{
+                font-size: 1.2rem;
+                font-weight: 400;
+                margin-top: 20px;
+                margin-bottom: 5px;
+            }
+        
+            .skill-bar{
+                display: flex;
+                align-items: center;
+                .skill-text{
+                }
+                .skill-progress{
+                    width: 100%;
+                   .progress{
+                       width: 100%;
+                       height: .5rem;
+                       background-color: red;
+                       margin-left: 1rem;
+                       background-color: #0381ff3f;
+                       position: relative;
+                       .inner-pregress{
+                            position: absolute;
+                            background-color: #037FFF;
+                            height: 100%;
+                            bottom: 0;
+                            left: 0;
+                       }
+                   }
+                }
+            }
+        }
+
+    }
+
+    .personalskills{
+        padding: 50px;
+        flex:0.4;
+        background-color: white;
+        h2{
+            padding-left: 50px;
+            font-size: 24px;
+            color: #037FFF;
+        }
+            ul{
+                padding-left:14%;
+
+                li{
+                    padding-top: 20px;
+                    font-size: 18px;
+                }
+            
+
+        }
+
+    }
+}

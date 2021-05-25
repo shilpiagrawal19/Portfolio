@@ -56,9 +56,9 @@ function ImageSection() {
                     <div className="right-section">
                         <p>: 19/01/1999</p>
                         <p>: Bachelor of Engineering</p>
-                        <p>: Hindi, English</p>
+                        <p>: English,Hindi</p>
                         <p>: 8109393133</p>
-                        <p>: agrawalshilpi191@gmail.com</p>
+                        <p>:agrawalshilpi191@gmail.com</p>
                         <p>: 79,Bada Sarafa near Rajwada ,Indore</p>
                        
                     </div>

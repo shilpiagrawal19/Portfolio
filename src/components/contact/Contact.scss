@@ -15,7 +15,7 @@
     align-items: center;
 
     @include mobile{
-      padding: 80px 80px 80px 30px;
+      padding: 30px 80px 80px 30px;
 
   }
 
@@ -60,6 +60,11 @@
     h2 {
       font-size: 30px;
       letter-spacing: 0.6pc;
+
+      @include mobile {
+        margin-top: 50px !important;
+        flex-direction: column;
+      }
     }
 
     form {
@@ -87,6 +92,7 @@
         @include mobile {
           width: 200px;
           height: 20px;
+          margin-bottom: 10px !important;
         }
       }
 
@@ -107,6 +113,7 @@
         @include mobile {
           width: 200px;
           height: 100px;
+          margin-bottom: 10px !important;
         }
       }
 

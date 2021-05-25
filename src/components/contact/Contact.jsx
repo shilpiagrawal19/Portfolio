@@ -33,6 +33,24 @@ export default function Contact() {
 
     <div className="contact" id="contact">
 
+      
+
+      <div className="right">
+      <Bounce top>
+      <h2>CONTACT</h2></Bounce>
+      <Slide right>
+
+      <form onSubmit={sendEmail}>
+          <input type="text" placeholder="Name" name="name" />
+          <input type="text" placeholder="Email" name="email" />
+          <textarea placeholder="Message" name="message"></textarea>
+          <button type="submit">Send</button>
+           {message && <span>Thanks, I'll reply ASAP :)</span>}
+        </form>
+        </Slide>
+
+      </div>
+
       <div className="left">
       <Slide left>
       <div className="itemContainer">
@@ -62,22 +80,6 @@ export default function Contact() {
         </div>
         </Slide>
 
-
-      </div>
-
-      <div className="right">
-      <Bounce top>
-      <h2>CONTACT</h2></Bounce>
-      <Slide right>
-
-      <form onSubmit={sendEmail}>
-          <input type="text" placeholder="Name" name="name" />
-          <input type="text" placeholder="Email" name="email" />
-          <textarea placeholder="Message" name="message"></textarea>
-          <button type="submit">Send</button>
-           {message && <span>Thanks, I'll reply ASAP :)</span>}
-        </form>
-        </Slide>
 
       </div>
     </div>

@@ -28,27 +28,32 @@ export const featuredPorfolio=[
     {
      id:"3",
      title: "SAM App",
-     img :task2
+     img :task2,
+     href :"https://shilpiagrawal19.github.io/Systemassets.github.io/1login.html"
     },
     {
       id:"4",
       title: "Company website",
-      img :design1
+      img :design1,
+      href :"https://shilpiagrawal19.github.io/Demoworkex.github.io/"
      },
      {
       id:"5",
       title: "Company website",
-      img :design2
+      img :design2,
+      href:"https://shilpiagrawal19.github.io/DemojavascriptWeb.github.io/website.html"
      },
      {
       id:"6",
       title: "E-commerse website",
-      img :design3
+      img :design3,
+      href:"https://shilpiagrawal19.github.io/craft.github.io/Craft.html",
      },
      {
       id:"7",
       title: "Signup Form",
-      img :design4
+      img :design4,
+      href:"https://shilpiagrawal19.github.io/Signup-form/signin.html",
      },
 ]
 
@@ -67,13 +72,15 @@ export const internshipPortfolio=[
   {
     id:"2",
     title: "Demo Website",
-    img : task1
+    img : task1,
+    href :"https://shilpiagrawal19.github.io/Learningdemoapp.github.io/index.html",
     }, 
     
     {
      id:"3",
      title: "SAM App",
-     img : task2
+     img : task2,
+     href :"https://shilpiagrawal19.github.io/Systemassets.github.io/1login.html",
     },
 ]
 
@@ -81,21 +88,25 @@ export const mydesignPortfolio=[
   {
     id:"4",
     title: "Company website",
-    img : design1
+    img : design1,
+    href :"https://shilpiagrawal19.github.io/Demoworkex.github.io/",
    },
    {
     id:"5",
     title: "Company website",
-    img :design2
+    img :design2,
+    href:"https://shilpiagrawal19.github.io/DemojavascriptWeb.github.io/website.html",
    },
    {
     id:"6",
     title: "E-commerse website",
-    img :design3
+    img :design3,
+    href:"https://shilpiagrawal19.github.io/craft.github.io/Craft.html",
    },
    {
     id:"7",
     title: "Signup Form",
-    img :design4
+    img :design4,
+    href:"https://shilpiagrawal19.github.io/Signup-form/signin.html",
    },
 ]

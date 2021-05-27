@@ -29,11 +29,15 @@
     margin-top: 1rem;
   }
     .about-text{
-    padding: .5rem .5rem;
+    // padding: .5rem 0rem;
     // float: left;
     // width: 80%;
     text-align: justify;
     font-size: 16px;
+    padding-bottom: 20px !important;
+    padding-left: 0px !important;
+    line-height: 1.5 !important;
+}
     
     // p{
     // padding-bottom: 10px !important;
@@ -50,8 +54,9 @@
     
     .about-details{
         display: flex;
+        line-height: 20px !important;
     p{
-        padding: .3rem 0;
+        padding: .4rem 0;
     }
     .right-section{
         margin-left: 2.3rem;
@@ -83,7 +88,7 @@
         height: .3rem;
         left: 0;
         bottom: 0;
-        background-color: #a4acc4;;
+        background-color: #a4acc4;
         transition: all 0.4s ease-in-out;
     }
     &:hover::after{
@@ -91,6 +96,5 @@
     }
     }
     
-    }
     
     

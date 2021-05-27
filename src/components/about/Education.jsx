@@ -18,8 +18,8 @@ return (
          <FiberManualRecordIcon className="icondot"/><span className="interntitle">SNV Infotech </span>
         <p> June 2019 - July 2020 </p>
             </li>
-</ul>
-</div>
+        </ul>
+    </div>
 
 <div>
 <SchoolIcon className="icon"/>

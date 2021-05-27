@@ -38,8 +38,8 @@ function ImageSection() {
         <div className="ImageSection">
             <div className="about-info">
                 <p className="about-text">
-                A passionate Software debveloper who is always eager to learn new things.
-                I love creating website with great user experiance.I like to optimised 
+                A passionate Software developer who is always eager to learn new things.
+                I love creating website with great user experience.I like to optimised 
                 code and make it highly configurable.I would love to work with an organization 
                 which provides me the opportunity to improve my skills along with growth of the organization.
                 

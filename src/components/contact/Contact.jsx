@@ -52,7 +52,7 @@ export default function Contact() {
       <Slide left>
       <div className="itemContainer">
           <Mail className="icon"/>
-          <span><a href="agrawalshilpi191@gmail.com">agrawalshilpi191@gmail.com</a></span>    
+          <span><a>agrawalshilpi191@gmail.com</a></span>    
           </div>
 
 
@@ -73,7 +73,7 @@ export default function Contact() {
 
         <div className="itemContainer">
         <HomeIcon className="icon"/>
-        <span>79,Bada Sarafa near Rajwada ,Indore</span>
+        <span><a href="https://www.google.com/maps/place/Sarafa+Bazar,+Indore,+Madhya+Pradesh+452002/@22.7177054,75.849403,17z/data=!4m5!3m4!1s0x3962fda0c01c3295:0xe1004ef7a4cbe1c7!8m2!3d22.7175144!4d75.852306">79,Bada Sarafa near Rajwada ,Indore</a></span>
         </div>
         </Slide>
 

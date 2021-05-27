@@ -6,18 +6,18 @@ export default function Education() {
 return (
 <div className="education">
 <WorkOutlineIcon className="icon"/>
-<span>Interships</span>
-<div>
-<ul>
-<li>
-<FiberManualRecordIcon className="icondot"/><span className="interntitle">Sysmetis IT Solution </span>
-<p> Sept 2020 - Apr 2021 </p>
-</li>
+ <span>Interships</span>
+    <div>
+        <ul>
+            <li>
+        <FiberManualRecordIcon className="icondot"/><span className="interntitle">Sysmetis IT Solution </span>
+        <p> Sept 2020 - Apr 2021 </p>
+            </li>
 
-<li>
-<FiberManualRecordIcon className="icondot"/><span className="interntitle">SNV Infotech </span>
-<p> June 2019 - July 2020 </p>
-</li>
+            <li>
+         <FiberManualRecordIcon className="icondot"/><span className="interntitle">SNV Infotech </span>
+        <p> June 2019 - July 2020 </p>
+            </li>
 </ul>
 </div>
 

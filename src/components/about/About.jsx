@@ -4,35 +4,17 @@ import { jsPDF } from "jspdf";
 import resume from "../../Assets/shilpee Agrawal.jpg";
 import Title from '../Title';
 import Slide from 'react-reveal/Slide';
-
-
-
-
-
+import './Imagesection.scss'
 
 function About() {
-
-    function Tittle({title, span}) {
-        return (
-            <div className="Title">
-                <h3>
-                    {title}
-                    <span> {span}</span>
-                </h3>
-            </div>
-        )
-    }
 
 function ImageSection() {
 
     const pdfGenrate=()=>{
         var doc = new jsPDF ('landscape' ,'px' ,'a4','false');
         doc.addImage(resume,'PDF',65,0,500,450);
-        doc.addPage();
+        // doc.addPage();
         doc.save('shilpee Agrawal.pdf')
-
-
-
     }
     return (
         <div className="ImageSection">
@@ -58,15 +40,12 @@ function ImageSection() {
                         <p>: Bachelor of Engineering</p>
                         <p>: English,Hindi</p>
                         <p>: 8109393133</p>
-                        <p>:agrawalshilpi191@gmail.com</p>
+                        <p>: agrawalshilpi191@gmail.com</p>
                         <p>: 79,Bada Sarafa near Rajwada ,Indore</p>
                        
                     </div>
                 </div>
                 <button className="btn" onClick={pdfGenrate}>Download Cv</button>
-            </div>
-
-            <div className="skill">
             </div>
             </div>
     )

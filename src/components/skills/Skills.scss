@@ -83,7 +83,14 @@
         
             .skill-bar{
                 display: flex;
+                margin-top: 20px !important;
+                margin-bottom: 5px !important;
                 align-items: center;
+                @include mobile{
+                    margin-top: 5px !important;
+                    margin-bottom: 0px !important;
+                }
+
                 .skill-text{
                     
             @include mobile{

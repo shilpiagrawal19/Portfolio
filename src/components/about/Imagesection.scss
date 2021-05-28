@@ -37,6 +37,10 @@
     padding-bottom: 20px !important;
     padding-left: 0px !important;
     line-height: 1.5 !important;
+
+    @include mobile {
+      padding-left: 15px !important;
+    }
 }
     
     // p{

@@ -1,7 +1,7 @@
 import React from 'react'
 import Education from './Education';
 import { jsPDF } from "jspdf";
-import resume from "../../Assets/shilpee Agrawal.jpg";
+import resume from "../../Assets/SHILPEE AGRAWAL SD.jpg";
 import Title from '../Title';
 import Slide from 'react-reveal/Slide';
 import './Imagesection.scss'

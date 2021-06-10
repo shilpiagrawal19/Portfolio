@@ -36,7 +36,7 @@ export default function Skills() {
             <Slide left>
                 <SkillsSection skill={'Html'} progress={'80%'} width={'80%'} />
                 <SkillsSection skill={'Bootstrap'} progress={'70%'} width={'70%'} />
-                <SkillsSection skill={'Css & scss'} progress={'80%'} width={'80%'} />
+                <SkillsSection skill={'Css'} progress={'80%'} width={'80%'} />
                 <SkillsSection skill={'Javascript'} progress={'60%'} width={'60%'} />
              </Slide>
             </div>
@@ -45,9 +45,9 @@ export default function Skills() {
             <div className="skillsContainer">
              <Slide right>
                 <SkillsSection skill={'React Js'} progress={'60%'} width={'60%'} />
-                <SkillsSection skill={'Php'} progress={'40%'} width={'40%'} />
+                <SkillsSection skill={'Php'} progress={'30%'} width={'30%'} />
                 <SkillsSection skill={'Git'} progress={'75%'} width={'75%'} />
-                <SkillsSection skill={'Material UI'} progress={'40%'} width={'40%'} />
+        {/*<SkillsSection skill={'Material UI'} progress={'40%'} width={'40%'} />*/}
                 </Slide>
             </div>
         </div>
